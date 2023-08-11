@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import '../models/categories_model.dart';
 
-import '../services/categories_model.dart';
 class Categories extends StatelessWidget {
   Categories({Key? key, required this.index, required this.categories})
       : super(key: key);

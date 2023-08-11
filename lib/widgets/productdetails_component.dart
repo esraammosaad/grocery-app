@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../services/productmodel.dart';
+import '../models/productmodel.dart';
+
 
 class ProductDetails extends StatelessWidget {
   ProductDetails({Key? key, required this.index, required this.items})

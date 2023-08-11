@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../constents.dart';
 class FavoriteScreen extends StatelessWidget {
   const FavoriteScreen({Key? key}) : super(key: key);
 
@@ -7,7 +9,7 @@ class FavoriteScreen extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        backgroundColor: const Color(0xff6CC51D),
+        backgroundColor: KPrimaryColor,
         title: const Text('Favorites'),
         centerTitle: true,
 

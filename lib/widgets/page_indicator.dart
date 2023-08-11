@@ -1,15 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-PageController controller = PageController();
+
 
 class Indicator extends StatelessWidget {
+  Indicator({super.key, required this.controller});
+
+  PageController controller = PageController();
 
   @override
   Widget build(BuildContext context) {
     return SmoothPageIndicator(
       controller: controller,
-      count: 3,
+      count: 4,
       effect: const WormEffect(
         dotColor: Colors.white,
         activeDotColor: Colors.green,

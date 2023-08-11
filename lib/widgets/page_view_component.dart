@@ -1,9 +1,10 @@
 import 'package:first_challenge/widgets/page_indicator.dart';
 import 'package:flutter/material.dart';
 class PageViewComp extends StatelessWidget {
-   PageViewComp({Key? key,required this.image,this.text}) : super(key: key);
+   PageViewComp({Key? key,required this.image, this.text,required this.pageController}) : super(key: key);
   String image;
   String ?text;
+   PageController pageController = PageController();
 
 
 
@@ -22,7 +23,7 @@ class PageViewComp extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              Indicator(),
+              Indicator(controller: pageController),
             ],
           ),
         )

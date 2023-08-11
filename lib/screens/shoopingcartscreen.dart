@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../constents.dart';
 class ShoopingCart extends StatelessWidget {
   const ShoopingCart({Key? key}) : super(key: key);
 
@@ -7,7 +9,7 @@ class ShoopingCart extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        backgroundColor: const Color(0xff6CC51D),
+        backgroundColor: KPrimaryColor,
         title: const Text('Shooping Cart'),
         centerTitle: true,
 
